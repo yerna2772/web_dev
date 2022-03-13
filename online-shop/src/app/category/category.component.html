@@ -1,0 +1,10 @@
+<h1>Welcome</h1>
+<div *ngFor = "let category of categories">
+    <h1>
+        <a routerLink="/categories/{{category.id}}/products" [title]="category.name + ' details'">
+          {{category.name}} ({{category.id}})
+        </a>
+    </h1>
+</div>
+
+

@@ -1,0 +1,11 @@
+<h1>Welcome</h1>
+<p>{{category}}</p>
+<div *ngFor = "let product of products">
+    <h1>
+        <a routerLink="/products/{{product.id}}" [title]="product.name + ' details'">
+          {{product.name}}
+        </a>
+    </h1>
+</div>
+
+
